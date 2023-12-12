@@ -7,7 +7,7 @@ function generateNumbersWithDelay() {
     var site = siteInput.value.trim();
     var quantity = parseInt(quantityInput.value);
 
-    if (contactInfo === '' || site === '' || isNaN(quantity) || quantity < 1 || quantity > 10) {
+    if (contactInfo === '' || site === '' || isNaN(quantity) || quantity < 1 || quantity > 50) {
         alert('Por favor, preencha todas as informações corretamente.');
         return;
     }
