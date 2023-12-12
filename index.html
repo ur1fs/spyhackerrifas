@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpyHacker Rifas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SpyHacker Rifas</h1>
+        <form id="numberForm">
+            <label for="site">Site da rifa:</label>
+            <input type="text" id="site" name="site" required>
+            <br>
+            <label for="contactInfo">Número de celular ou e-mail usado para comprar as cotas:</label>
+            <input type="text" id="contactInfo" name="contactInfo" required>
+            <br>
+            <label for="quantity">Quantidade cotas que comprou (1-10):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+            <button type="button" onclick="generateNumbersWithDelay()">Verificar números</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
